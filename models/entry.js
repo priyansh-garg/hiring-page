@@ -7,6 +7,7 @@ const entrySchema= new mongoose.Schema({
     name:String,
     email:String,
     resume:String,
+    resumeLink:String,
     appliedPosition:String,
     highestQualification:String
 }); 

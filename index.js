@@ -34,6 +34,7 @@ app.post("/upload",upload.single("resume"),(req,res)=>{
             name:req.body.name,
             email:req.body.email,
             resume:path.normalize(filepath).replace(/\\/g, '/'),
+            resumeLink:req.body.link,
             appliedPosition:req.body.position,
             highestQualification:req.body.qualification
         });
